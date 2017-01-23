@@ -1,5 +1,5 @@
 <div>
-  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+  <form (ngSubmit)="onSubmit(); form.reset()" [formGroup]="form">
     <div *ngFor="let question of questions" class="form-row">
       <df-question [question]="question" [form]="form"></df-question>
     </div>
