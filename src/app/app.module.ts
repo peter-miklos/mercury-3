@@ -25,4 +25,6 @@ import { DynamicFormQuestionComponent }   from './forms/dynamic-form-question.co
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(){}
+}
