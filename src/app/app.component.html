@@ -1,16 +1,17 @@
-<md-sidenav-container [class.m2app-dark]="isDarkTheme">
-  <md-sidenav #sidenav mode="side" class="app-sidenav">
-    Test
+<md-sidenav-container>
+  <md-sidenav #sidenav mode="side">
+    Test-1<br />
+    Test-2
   </md-sidenav>
 
   <md-toolbar color="primary">
-    <button class="app-icon-button" (click)="sidenav.toggle()">
+    <button md-button (click)="sidenav.toggle()">
       <i class="material-icons app-toolbar-menu">menu</i>
     </button>
     mercury-a3
   </md-toolbar>
 
   <div class="app-content">
-
+    {{title}}
   </div>
 </md-sidenav-container>
